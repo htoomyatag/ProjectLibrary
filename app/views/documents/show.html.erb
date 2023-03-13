@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @document.name %>
+</p>
+
+<p>
+  <strong>Is private:</strong>
+  <%= @document.is_private %>
+</p>
+
+<p>
+  <strong>Is owner:</strong>
+  <%= @document.is_owner %>
+</p>
+
+
+
+<div>
+<% @document.images.each do |image| %>
+  <%= image_tag (image), :class => "style_image" %>
+<% end %>
+</div>
+
+<%= link_to 'Edit', edit_document_path(@document) %> |
+<%= link_to 'Back', documents_path %>
