@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Use devise gem for user authentication
+- system admin can CRUD user
+- user can 
+    - muitiple file upload with drag and drop feature
+     (for above feature use active_storage_drag_and_drop gem)
+	- view their uploaded files
+	- view other user public files
+	- set private to uploaded file
+	- copy files
+	- delete files
+	- change user password
 
-Things you may want to cover:
+Postgres password
+  - username: postgres
+  - password: password
 
-* Ruby version
+system admin 
+  - username: admin
+  - password: 12345678
 
-* System dependencies
+user
+  - username: user
+  - password: 12345678
 
-* Configuration
+#Todo
+Automated testing need to implement.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
